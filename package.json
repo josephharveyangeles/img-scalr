@@ -1,0 +1,32 @@
+{
+  "name": "img-scalr",
+  "version": "1.0.0",
+  "description": "Scale images using javascript at the frontend",
+  "main": "lib/img-scalr.cjs.js",
+  "module": "lib/img-scalr.es.js",
+  "jsnext:main": "lib/img-scalr.es.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && rollup --config rollup.config.js",
+    "deploy": "npm version patch && npm publish",
+    "prepublishOnly": "git push --follow-tags"
+  },
+  "author": "yev <josephharveyangeles@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephharveyangeles/img-scalr"
+  },
+  "keywords": [
+    "scale",
+    "resize",
+    "image",
+    "canvas"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.4",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
