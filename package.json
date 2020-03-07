@@ -1,6 +1,6 @@
 {
   "name": "img-scalr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scale images using javascript at the frontend",
   "main": "lib/img-scalr.cjs.js",
   "module": "lib/img-scalr.es.js",
